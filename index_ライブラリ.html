@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="mobile-detect.js"></script>
+<meta charset="UTF-8">
+<title>alert_test</title>
+</head>
+<body>
+&nbsp;
+<script>
+var md = new MobileDetect(window.navigator.userAgent);
+if(md.mobile()){
+  alert('モバイル端末');
+}else{
+  alert('NOT モバイル端末');
+}
+</script>
+</body>
+</html>
