@@ -7,11 +7,13 @@
 <body>
 &nbsp;
 <script>
+var sp = "メニューを開くには左上の三本線をタップしてください";
+var pc = "PC";
 function isSmartPhone(){
   if (navigator.userAgent.match(/iPhone|Android.+Mobile/)){
-    return alert("メニューを開くには左上の三本線をタップしてください");
+    return alert(sp);
   } else {
-    return alert("PC");
+    return alert(pc);
   }
 }
 isSmartPhone();
